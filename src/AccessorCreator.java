@@ -25,14 +25,14 @@ public class AccessorCreator {
 		List<String> lines = readText();
 		File outputFile = createFile();
         writeToFile(lines, outputFile, withOrWithout);
-        finishedAlert(withOrWithout, lines);
+         finishedAlert(withOrWithout, lines);
 	}
 	
 	public static boolean checkSpaces(){
 		boolean done = false;
+	    Scanner checkSpaces = new Scanner(System.in);
 		while(done == false){
 		    System.out.println("Do you want spaces after every accessor function? (Y/N)");
-		    Scanner checkSpaces = new Scanner(System.in);
 		    String spacesInput = checkSpaces.nextLine();
 		    if(spacesInput.equals("Y") || spacesInput.equals("N")){
 		    	done = true;
@@ -43,6 +43,7 @@ public class AccessorCreator {
 			}
 		    else System.out.println("Please enter \"Y\" or \"N\"");
 		}
+		checkSpaces.close();
 		return true; //Must include for compiler, never reached
 	}
 	
