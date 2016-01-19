@@ -1,4 +1,4 @@
-# Java-Accessor-Method-Creator
+# Java Accessor Method Creator
 Creates getters and setters with console interaction.
 
 I got tired of writing accessor methods, so I automated the process. (Turns out IDE's already do this and I was blissfully unaware). I still want to create a user-friendly GUI for this eventually.
